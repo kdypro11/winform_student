@@ -37,6 +37,7 @@ namespace _20210404_ProJect2
 
             //리스트뷰에 입력
             ListViewItem lv = new ListViewItem();
+      
             lv.Text = num.Value.ToString();
             lv.SubItems.Add(textBox1.Text); 
             string gender = "";
@@ -65,10 +66,11 @@ namespace _20210404_ProJect2
             double ar = (subj01 + subj02 + subj03 + subj04 + subj05) / 5;
             lv.SubItems.Add(ar.ToString());
 
+          
+
+
+            //----------------------  마무리 라인 --------------
             listView.Items.Add(lv);
-
-
-
 
             num.Value++;
 
@@ -78,8 +80,6 @@ namespace _20210404_ProJect2
             subj3.Value = 0;
             subj4.Value = 0;
             subj5.Value = 0;
-
-           
 
 
         }
@@ -150,6 +150,9 @@ namespace _20210404_ProJect2
             }
         }
 
-        
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
